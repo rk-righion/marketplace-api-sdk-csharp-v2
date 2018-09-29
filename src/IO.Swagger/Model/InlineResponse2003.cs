@@ -34,7 +34,7 @@ namespace IO.Swagger.Model
         /// </summary>
         /// <param name="Available">Available.</param>
         /// <param name="Links">Links.</param>
-        public InlineResponse2003(int? Available = default(int?), List<InlineResponse200ItemsLinks> Links = default(List<InlineResponse200ItemsLinks>))
+        public InlineResponse2003(int? Available = default(int?), InlineResponse200ItemsLinks Links = default(InlineResponse200ItemsLinks))
         {
             this.Available = Available;
             this.Links = Links;
@@ -49,7 +49,7 @@ namespace IO.Swagger.Model
         /// Gets or Sets Links
         /// </summary>
         [DataMember(Name="links", EmitDefaultValue=false)]
-        public List<InlineResponse200ItemsLinks> Links { get; set; }
+        public InlineResponse200ItemsLinks Links { get; set; }
         /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
@@ -104,7 +104,7 @@ namespace IO.Swagger.Model
                 (
                     this.Links == other.Links ||
                     this.Links != null &&
-                    this.Links.SequenceEqual(other.Links)
+                    this.Links.Equals(other.Links)
                 );
         }
 

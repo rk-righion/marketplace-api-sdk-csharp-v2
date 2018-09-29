@@ -1,0 +1,9 @@
+D:\Produto\rkprod-netshoessdk\src\IO.Swagger\bin\Debug\IO.Swagger.dll
+D:\Produto\rkprod-netshoessdk\src\IO.Swagger\bin\Debug\IO.Swagger.pdb
+D:\Produto\rkprod-netshoessdk\src\IO.Swagger\bin\Debug\Newtonsoft.Json.dll
+D:\Produto\rkprod-netshoessdk\src\IO.Swagger\bin\Debug\RestSharp.dll
+D:\Produto\rkprod-netshoessdk\src\IO.Swagger\bin\Debug\Newtonsoft.Json.xml
+D:\Produto\rkprod-netshoessdk\src\IO.Swagger\obj\Debug\IO.Swagger.csproj.CoreCompileInputs.cache
+D:\Produto\rkprod-netshoessdk\src\IO.Swagger\obj\Debug\IO.Swagger.csproj.CopyComplete
+D:\Produto\rkprod-netshoessdk\src\IO.Swagger\obj\Debug\IO.Swagger.dll
+D:\Produto\rkprod-netshoessdk\src\IO.Swagger\obj\Debug\IO.Swagger.pdb
