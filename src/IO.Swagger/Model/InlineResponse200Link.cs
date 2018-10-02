@@ -27,16 +27,22 @@ namespace IO.Swagger.Model
         /// Initializes a new instance of the <see cref="InlineResponse200Link" /> class.
         /// </summary>
         /// <param name="Href">Rel.</param>
-        public InlineResponse200Link(string Href = default(string))
+        public InlineResponse200Link(string Href = default(string), string Rel = default(string))
         {
             this.Href = Href;
+            this.Rel = Rel;
         }
-        
+
         /// <summary>
         /// Gets or Sets Href
         /// </summary>
         [DataMember(Name= "href", EmitDefaultValue=false)]
         public string Href { get; set; }
+        /// <summary>
+        /// Gets or Sets Rel
+        /// </summary>
+        [DataMember(Name = "rel", EmitDefaultValue = false)]
+        public string Rel { get; set; }
         /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
@@ -46,6 +52,7 @@ namespace IO.Swagger.Model
             var sb = new StringBuilder();
             sb.Append("class InlineResponse200ItemsLinks {\n");
             sb.Append("  Href: ").Append(Href).Append("\n");
+            sb.Append("  Rel: ").Append(Rel).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -81,11 +88,16 @@ namespace IO.Swagger.Model
             if (other == null)
                 return false;
 
-            return 
+            return
                 (
                     this.Href == other.Href ||
                     this.Href != null &&
                     this.Href.Equals(other.Href)
+                ) &&
+                (
+                    this.Rel == other.Rel ||
+                    this.Rel != null &&
+                    this.Rel.Equals(other.Rel)
                 );
         }
 
@@ -102,6 +114,8 @@ namespace IO.Swagger.Model
                 // Suitable nullity checks etc, of course :)
                 if (this.Href != null)
                     hash = hash * 59 + this.Href.GetHashCode();
+                if (this.Rel != null)
+                    hash = hash * 59 + this.Rel.GetHashCode();
                 return hash;
             }
         }
