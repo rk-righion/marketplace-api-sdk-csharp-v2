@@ -34,6 +34,7 @@ namespace IO.Swagger.Client
         private JsonSerializerSettings serializerSettings = new JsonSerializerSettings
         {
             ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor,
+            NullValueHandling = NullValueHandling.Ignore,
             Error = (se, ev) => ev.ErrorContext.Handled = true
         };
 
@@ -343,7 +344,7 @@ namespace IO.Swagger.Client
         {
             try
             {
-                return obj != null ? JsonConvert.SerializeObject(obj) : null;
+                return obj != null ? JsonConvert.SerializeObject(obj, serializerSettings) : null;
             }
             catch (Exception e)
             {
